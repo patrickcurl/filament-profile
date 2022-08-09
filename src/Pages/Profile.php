@@ -52,10 +52,12 @@ class Profile extends Page implements HasForms
         
         $user->update($state);
 
+        if ($this->new_password){
+            $this->updateSessionPassword($user);
+        }
+
         $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
         $this->notify('success', 'Your profile has been updated.');
-
-        $this->updateSessionPassword($user);
     }
 
     private function updateSessionPassword($user)

@@ -49,10 +49,10 @@ class Profile extends Page implements HasForms
         ]);
 
         $user = auth()->user();
-        
+
         $user->update($state);
 
-        if ($this->new_password){
+        if ($this->new_password) {
             $this->updateSessionPassword($user);
         }
 

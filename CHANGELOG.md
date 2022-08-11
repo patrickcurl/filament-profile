@@ -2,6 +2,25 @@
 
 All notable changes to `filament-profile` will be documented in this file.
 
+## v0.2.1 - 2022-08-11
+
+### What's Changed
+
+- chore(deps): bump dependabot/fetch-metadata from 1.1.1 to 1.2.0 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/8
+- chore(deps): bump dependabot/fetch-metadata from 1.2.0 to 1.2.1 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/9
+- chore(deps): bump dependabot/fetch-metadata from 1.2.1 to 1.3.0 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/12
+- chore(deps): bump dependabot/fetch-metadata from 1.3.0 to 1.3.1 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/13
+- chore(deps): bump dependabot/fetch-metadata from 1.3.1 to 1.3.3 by @dependabot in https://github.com/ryangjchandler/filament-profile/pull/14
+- Update README.md by @wychoong in https://github.com/ryangjchandler/filament-profile/pull/18
+- fix: update session password after update by @wychoong in https://github.com/ryangjchandler/filament-profile/pull/16
+
+### New Contributors
+
+- @dependabot made their first contribution in https://github.com/ryangjchandler/filament-profile/pull/8
+- @wychoong made their first contribution in https://github.com/ryangjchandler/filament-profile/pull/18
+
+**Full Changelog**: https://github.com/ryangjchandler/filament-profile/compare/v0.2.0...v0.2.1
+
 ## v0.2.0 - 2022-02-08
 
 ## What's Changed

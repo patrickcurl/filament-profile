@@ -48,10 +48,23 @@ class Profile extends Page implements HasForms
             'password' => $this->new_password ? Hash::make($this->new_password) : null,
         ]);
 
-        auth()->user()->update($state);
+        $user = auth()->user();
+        
+        $user->update($state);
+
+        if ($this->new_password){
+            $this->updateSessionPassword($user);
+        }
 
         $this->reset(['current_password', 'new_password', 'new_password_confirmation']);
         $this->notify('success', 'Your profile has been updated.');
+    }
+
+    private function updateSessionPassword($user)
+    {
+        request()->session()->put([
+            'password_hash_' . auth()->getDefaultDriver() => $user->getAuthPassword(),
+        ]);
     }
 
     public function getCancelButtonUrlProperty()
